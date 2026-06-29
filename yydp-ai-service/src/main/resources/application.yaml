@@ -1,0 +1,17 @@
+server:
+  port: ${YYDP_AI_PORT:8090}
+
+spring:
+  application:
+    name: yydp-ai-service
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_API_KEY:}
+      chat:
+        options:
+          model: ${DASHSCOPE_MODEL:qwen-turbo-flash}
+          temperature: ${DASHSCOPE_TEMPERATURE:0.2}
+
+logging:
+  level:
+    com.yydp.ai: ${YYDP_AI_LOG_LEVEL:info}

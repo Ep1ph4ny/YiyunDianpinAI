@@ -8,11 +8,11 @@
         <version>2.3.12.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.hmdp</groupId>
-    <artifactId>hm-dianping</artifactId>
+    <groupId>com.yydp</groupId>
+    <artifactId>yy-dianpin</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>hm-dianping</name>
-    <description>Demo project for Spring Boot</description>
+    <name>yy-dianpin</name>
+    <description>YiYun DianPing - local life review platform with AI</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>

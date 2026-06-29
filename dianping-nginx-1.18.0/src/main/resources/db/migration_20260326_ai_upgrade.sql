@@ -1,4 +1,4 @@
--- Run once on existing hmdp database.
+-- Run once on existing yydp database.
 -- Adds shop description field for AI assistant + seeds baseline descriptions.
 
 ALTER TABLE `tb_shop`

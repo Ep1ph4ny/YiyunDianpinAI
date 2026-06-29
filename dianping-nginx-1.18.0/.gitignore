@@ -3,9 +3,6 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
-start-all*
-nginx-1.18.0 dianping/**
-项目理解文档.md
 
 ### STS ###
 .apt_generated

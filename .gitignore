@@ -1,14 +1,39 @@
+# Commit allowlist
+#
+# Keep commits focused on:
+# - README.md
+# - backend project: dianping-nginx-1.18.0
+# - AI subproject: yydp-ai-service
+#
+# Everything else at the repository root is ignored unless explicitly allowed.
+*
+!/.gitignore
+!/README.md
+!/dianping-nginx-1.18.0/
+!/dianping-nginx-1.18.0/**
+!/yydp-ai-service/
+!/yydp-ai-service/**
+
+# Do not commit the frontend / bundled nginx project.
+/dianping-nginx-1.18.0/nginx-1.18.0 dianping/
+
 # OS / IDE
 .idea/
 *.iml
+*.iws
+*.ipr
+.vscode/
 
 # Local temp outputs
 *.out
 *.log
+.env
+*.env
 
 # Maven / build artifacts
 **/.m2-temp/
 **/target/
+**/build/
 
 # Nginx runtime files
 **/logs/

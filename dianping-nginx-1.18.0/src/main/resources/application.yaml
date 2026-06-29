@@ -2,7 +2,7 @@ server:
   port: 8081
 spring:
   application:
-    name: hmdp
+    name: yydp
   rabbitmq:
     host: localhost
     port: 5672
@@ -17,7 +17,7 @@ spring:
         multiplier: 2
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/hmdp?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://127.0.0.1:3306/yydp?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
     username: root
     password: root12345
   redis:
@@ -33,15 +33,15 @@ spring:
   jackson:
     default-property-inclusion: non_null
 mybatis-plus:
-  type-aliases-package: com.hmdp.entity
+  type-aliases-package: com.yydp.entity
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 logging:
   level:
-    com.hmdp: debug
+    com.yydp: debug
 
 # 保留新文件的AI配置（旧文件没有，不修改）
-hmdp:
+yydp:
   ai:
     base-url: http://127.0.0.1:8090
     connect-timeout-ms: 1500
